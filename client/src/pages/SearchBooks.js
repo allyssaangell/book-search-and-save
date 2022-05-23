@@ -13,7 +13,7 @@ import Auth from "../utils/auth";
 
 import { useMutation } from "@apollo/react-hooks";
 import { SAVE_BOOK } from "../utils/mutations";
-import { saveBook, searchGoogleBooks } from "../utils/API";
+import { searchGoogleBooks } from "../utils/API";
 import { saveBookIds, getSavedBookIds } from "../utils/localStorage";
 
 const SearchBooks = () => {
@@ -61,7 +61,7 @@ const SearchBooks = () => {
       setSearchedBooks(bookData);
       setSearchInput("");
     } catch (err) {
-      console.error(err);
+      console.error(error);
     }
   };
 
