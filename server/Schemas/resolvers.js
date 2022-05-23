@@ -39,29 +39,6 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
-    addThought: async (parent, args, context) => {
-      if (context.user) {
-        const thought = await Thought.create({
-          ...args,
-          username: context.user.username,
-        });
-
-        await User.findByIdAndUpdate(
-          { _id: context.user._id },
-          { $push: { thoughts: thought._id } },
-          { new: true }
-        );
-
-        return thought;
-      }
-      throw new AuthenticationError("You need to be logged in!");
-    },
-    addUser: async (parent, args) => {
-      const user = await User.create(args);
-      const token = signToken(user);
-
-      return { token, user };
-    },
     saveBook: async (parent, { input }, context) => {
       if (context.user) {
         const updatedUser = await User.findOneAndUpdate(
