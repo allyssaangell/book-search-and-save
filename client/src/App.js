@@ -6,7 +6,7 @@ import {
   InMemoryCache,
   ApolloProvider,
   createHttpLink,
-} from "@apollo/client";
+} from "@apollo/react-hooks";
 import { setContext } from "@apollo/client/link/context";
 
 import SearchBooks from "./pages/SearchBooks";
