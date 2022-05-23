@@ -44,10 +44,10 @@ THEN I am logged out of the site and presented with a menu with the options Sear
 ```
 
 ## Link to Deployed Application
-(placeholder - not currently deployed)
+https://safe-falls-82181.herokuapp.com/
 
-## Preview of what you will see at Deployed Application
-(placeholder - not currently deployed)
+## Example of Search Results in Deployed Application
+<img width="1509" alt="HarryPotterSearch" src="https://user-images.githubusercontent.com/86737019/169735763-6a8d07bf-da8f-4de4-8c63-e07affb13cb3.png">
 
 ## License
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
